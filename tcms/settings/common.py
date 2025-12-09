@@ -301,6 +301,7 @@ STATICFILES_DIRS = [
     os.path.join(TCMS_ROOT_PATH, "static").replace("\\", "/"),
     os.path.join(TCMS_ROOT_PATH, "node_modules").replace("\\", "/"),
 ]
+print(STATICFILES_DIRS)
 
 # List of finder classes that know how to find static files in
 # various locations.
