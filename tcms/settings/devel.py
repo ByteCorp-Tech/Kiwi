@@ -9,8 +9,8 @@ from .common import *  # noqa: F403
 
 # Debug settings
 DEBUG = True
-from dotenv import load_dotenv
-load_dotenv()
+# from dotenv import load_dotenv
+# load_dotenv()
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
@@ -21,6 +21,20 @@ DATABASES = {
         "PORT": "5432",
     }
 }
+
+
+# Database settings
+# from dotenv import load_dotenv
+# load_dotenv()
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.sqlite3",
+#         "NAME": str(TEMP_DIR / "kiwi.devel.sqlite"),  # noqa: F405
+#         "USER": "root",
+#         "PASSWORD": "",
+#         "HOST": "",
+#         "PORT": "",
+#     }}
 
 
 

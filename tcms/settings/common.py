@@ -215,7 +215,7 @@ SECURE_CONTENT_TYPE_NOSNIFF = True
 
 # Kiwi TCMS doesn't serve plain/text HTTP anymore
 # https://docs.djangoproject.com/en/4.2/ref/settings/#secure-ssl-redirect
-SECURE_SSL_REDIRECT = "runserver" not in sys.argv and "test" not in sys.argv
+# SECURE_SSL_REDIRECT = False
 
 # See https://github.com/kiwitcms/Kiwi/issues/2717
 # and tcms/issuetracker/azure_boards.py
