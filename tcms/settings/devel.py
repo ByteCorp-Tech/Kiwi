@@ -9,18 +9,19 @@ from .common import *  # noqa: F403
 
 # Debug settings
 DEBUG = True
-
-# Database settings
+from dotenv import load_dotenv
+load_dotenv()
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": str(TEMP_DIR / "kiwi.devel.sqlite"),  # noqa: F405
-        "USER": "root",
-        "PASSWORD": "",
-        "HOST": "",
-        "PORT": "",
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": os.getenv('NAME'),  # noqa: F405
+        "USER": os.getenv('DB_USER'),
+        "PASSWORD": os.getenv('PASSWORD'),
+        "HOST": "localhost",
+        "PORT": "5432",
     }
 }
+
 
 
 CACHES = {
