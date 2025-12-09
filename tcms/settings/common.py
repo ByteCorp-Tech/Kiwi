@@ -184,7 +184,7 @@ STORAGES = {
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/var/www/example.com/static/"
-STATIC_ROOT = "/Kiwi/static/"
+STATIC_ROOT = "."
 
 
 AUTHENTICATION_BACKENDS = [
